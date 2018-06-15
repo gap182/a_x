@@ -81,7 +81,7 @@ Do i=1, arrays_dimension
     read(9,*) zcmb(i),mb(i)    
     If (zcmb(i) > z_min .and. zcmb(i) < z_max) then
         write(11,*) zcmb(i),mb(i)
-         logz(i)=LOG10(299792458*zcmb(i)*(1+0.5*(1-q_0)*zcmb(i)-(1-q_0-3*(q_0**2)+j_0)*(zcmb(i))**2/6))
+         logz(i)=LOG10(299792.458*zcmb(i)*(1+0.5*(1-q_0)*zcmb(i)-((1-q_0-3*(q_0**2)+j_0)*(zcmb(i))**2)/6))
         
          mb_02(i)=0.2*mb(i)
          
